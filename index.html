@@ -301,10 +301,18 @@
     <div class="subscribe">
       <form action="#" method="get">
          <input type="email" name="" id="" placeholder="Enter your email here" required>
-      <input type="submit" value="Subscribe">
+      <input type="submit" value="Subscribe" onclick="clicked()">
       </form>
      
     </div>
   </footer>
+  <script>
+    function clicked() {
+  if (document.querySelector('input[type=email]').value === '') {
+    alert('fill the input box');
+  } else {
+  document.querySelector('input[type=submit]').value = "Subscribed";
+} }
+  </script>
 </body>
 </html>
