@@ -195,7 +195,7 @@ footer {
   display: flex;
   width: 70%;
   justify-content: space-evenly;
-  align-items: center;
+  align-content: center;
   margin: 15px auto;
 }
 .social-media {
@@ -232,7 +232,82 @@ footer {
   cursor: pointer;
 }
 /* footer syle ended*/
-@media only screen and (min-width: 768px) {
+/* Responsive design1 started*/
+@media only screen and (min-width: 800px) {
+  body {
+    margin: 50px;
+  }
+  .logo .logo-text {
+  font-size: 30px;
+  font-weight: 900;
+}
+ .menu-content {
+  width: 30%;
+}
+.menu-content li a {
+  font-size: 16px;
+}
+nav button {
+  font-size: 20px;
+}
+.banner {
+  margin-top: 30px;
+  display: grid;
+  align-content: center;
+  
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  " x x x x x . y y y y y y"
+  " x x x x x . y y y y y y"
+  ;
+  grid-gap: 10px;
+  align-items: space-evenly;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+}
+.banner-item1 h1 {
+  font-size: 30px;
+}
+.banner-item1 p {
+  font-size: 16px;
+  text-align: justify;
+}
+.banner-item2 img {
+  height: 450px;
+}
+.explore {
+  font-size: 12px;
+  width: 200px;
+}
+.description h1 {
+  font-size: 30px;
+}
+.description p {
+  font-size: 16px;
+}
+.footer-menu {
+  width: 40%;
+}
+.social-medias {
+  width: 20%;
+}
+.subscribe {
+  display: flex;
+  flex-direction: row;
+}
+.subscribe input[type="email"] {
+display: inline;
+width: 250px;
+}
+.subscribe input[type="submit"] {
+  width: ;
+}
+
+}
+/* Responsive design1 ended*/
+@media only screen and (min-width: 1224px) {
   body {
     margin: 50px;
   }
@@ -302,4 +377,3 @@ width: 250px;
   width: ;
 }
 }
-
